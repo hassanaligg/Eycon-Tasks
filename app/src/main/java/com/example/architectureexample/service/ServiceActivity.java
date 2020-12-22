@@ -14,11 +14,10 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-
-import com.example.architectureexample.BuildConfig;
 import com.example.architectureexample.R;
-import com.example.architectureexample.mvvm.MainActivity;
+
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.BuildConfig;
 
 public class ServiceActivity extends AppCompatActivity {
     private static final int REQUEST_CODE_LOCATION_PERMISSION = 1;
