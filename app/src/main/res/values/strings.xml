@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ArchitectureExample</string>
+    <string name="content_description_hero_image">null</string>
+    <string name="content_description_poster">null</string>
+    <string name="Header_text">Beauty And The Beast</string>
+    <string name="todo">null</string>
+    <string name="movie_disc">March 2017 PG 129 Mins</string>
+    <string name="movie_details">Belle, a beautiful young woman, agrees to live with the Beast in exchange for the return of her abducted father. Soon, Belle discovers that her hideous captor is actually an enchanted prince.</string>
+    <string name="play_text">Play</string>
+    <string name="notify_text">Notifiy</string>
+    <string name="per">71%</string>
+    <string name="info_text">Info</string>
+
+</resources>

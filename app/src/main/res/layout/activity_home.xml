@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".HomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="15dp"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="8dp"
+            android:src="@drawable/dashboard"
+            android:layout_marginLeft="10dp"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="DashBoard"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        />
+    <!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_marginBottom="30dp"-->
+<!--            android:background="@drawable/edittextback"-->
+<!--            android:onClick="crudActivity"-->
+<!--            android:text="C R U D"-->
+<!--            android:textColor="#d50000"-->
+<!--            android:textSize="30sp"-->
+<!--             />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button1"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="80sp"-->
+<!--            android:layout_marginBottom="30dp"-->
+<!--            android:background="@drawable/edittextback"-->
+<!--            android:onClick="foregroundActivity"-->
+<!--            android:text="Foreground Service"-->
+<!--            android:textColor="#d50000"-->
+<!--            android:textSize="25sp"-->
+<!--             />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button2"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="80sp"-->
+<!--            android:background="@drawable/edittextback"-->
+<!--            android:onClick="checkLocation"-->
+<!--            android:text="Check Location"-->
+<!--            android:textColor="#d50000"-->
+<!--            android:textSize="25sp"-->
+<!--            />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button3"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="80sp"-->
+<!--            android:background="@drawable/edittextback"-->
+<!--            android:onClick="Demo_ui"-->
+<!--            android:text="Demo UI"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:textColor="#d50000"-->
+<!--            android:textSize="25sp"-->
+<!--             />-->
+<!--    </LinearLayout>-->
+</LinearLayout>

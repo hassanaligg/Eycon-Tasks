@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.architectureexample">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".firebaseCRUD.FirebaseHomeActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".memorablePlaces.MapActivity" />
+        <activity android:name=".memorablePlaces.MemorablePlacesActivity" />
+        <activity android:name=".service.ShowLocationActivity" />
+        <activity android:name=".demoUi.Animate_Activity" />
+        <activity android:name=".demoUi.Demo_Ui_Activity" />
+        <activity android:name=".getlocation.CheckLocationActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".mvvm.MainActivity" />
+        <activity
+            android:name=".mvvm.AddEditNoteActivity"
+            android:parentActivityName=".mvvm.MainActivity" />
+        <activity
+            android:name=".service.ServiceActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.ForegroundService" />
+
+        <receiver
+            android:name=".service.MyBootReciever"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

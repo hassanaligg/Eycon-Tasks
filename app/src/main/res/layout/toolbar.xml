@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/colorAccent"
+    android:id="@+id/toobar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 Item Selected"
+            android:id="@+id/ItemCount"/>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
